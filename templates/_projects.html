@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+      <!-- Eagle Wings -->
+      <article class="project-card">
+        <img src="{{ url_for('static', filename='assets/photos/drone_img.jpg') }}" alt="Adam Khan" />
+        <h3>Eagle Wings (FYP)</h3>
+        <p>
+          An advanced drone automation system featuring face detection, object tracking, autonomous self-charging, navigation, and chatbot control using text and voice commands.
+        </p>
+        <a href="https://github.com/EagleWingsFYP" target="_blank" rel="noopener noreferrer" class="btn-github">View on GitHub</a>
+      </article>
+
+      <!-- Newsletter AI Agent -->
+      <article class="project-card">
+        <img src="{{ url_for('static', filename='assets/photos/newsletter_img.jpg') }}" alt="Adam Khan" />
+        <h3>Newsletter AI Agent</h3>
+        <p>
+          An intelligent, end-to-end automated newsletter generator using cutting-edge LLMs (LLaMA 3 via Groq), LangGraph workflows, FastAPI backend, and a modern frontend for seamless newsletter creation.
+        </p>
+        <a href="https://github.com/M-Adam-Khan/Newsletter-AI-Agent" target="_blank" rel="noopener noreferrer" class="btn-github">View on GitHub</a>
+      </article>
+
+      <!-- Custom AI Chatbot -->
+      <article class="project-card">
+        <img src="{{ url_for('static', filename='assets/photos/chatbot_img.jpg') }}" alt="Adam Khan" />
+        <h3>Custom AI Chatbot</h3>
+        <p>
+          A fully customizable chatbot application built with Streamlit and FastAPI, integrating Groq and OpenAI models for a powerful, scalable conversational AI experience.
+        </p>
+        <a href="https://github.com/M-Adam-Khan/Custom-AI-Chatbot" target="_blank" rel="noopener noreferrer" class="btn-github">View on GitHub</a>
+      </article>
+
+      <!-- BloodLine Solutions -->
+      <article class="project-card">
+        <img src="{{ url_for('static', filename='assets/photos/bloodline_img.jpg') }}" alt="Adam Khan" />
+        <h3>BloodLine-Solutions</h3>
+        <p>
+          A smart ML-driven system to validate blood donors and patients, featuring donor registration, city & blood group matching, and Neo4j-powered data storage for accurate matching.
+        </p>
+        <a href="https://github.com/M-Adam-Khan/BloodLine-Solutions" target="_blank" rel="noopener noreferrer" class="btn-github">View on GitHub</a>
+      </article>
+    </div>
+
+    <p class="see-more">
+      See more projects on
+      <a href="https://github.com/M-Adam-Khan" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    </p>
+  </section>
+
+</body>
+</html>
