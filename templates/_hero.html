@@ -1,6 +1,5 @@
 <section id="hero">
 
-  <!-- Top Navigation Bar -->
   <nav class="hero-nav">
     <ul>
       <li><a href="#about">About</a></li>
@@ -9,10 +8,8 @@
     </ul>
   </nav>
 
-  <!-- Hero Content Wrapper -->
   <div class="hero-main-content">
 
-    <!-- Left Text Block -->
     <div class="hero-text">
       <h1>Hi there, I’m <span class="highlight-name">Adam Khan</span></h1>
       <h2>
@@ -23,13 +20,11 @@
       <p class="intro-subtext">
         A skilled Python AI/ML Engineer with a Bachelor's degree in Artificial Intelligence, specializing in building innovative solutions using advanced tools and technologies. Passionate about creating impactful, end-to-end projects in the field of AI.
       </p>
-      <a href="{{ url_for('static', filename='files/Resume M.Adam.pdf') }}" download class="btn-download-resume">Download Resume</a>
-
+      <a href="static/files/Resume M.Adam.pdf" download class="btn-download-resume">Download Resume</a>
     </div>
 
-    <!-- Right Image -->
     <div class="hero-image-wrapper">
-      <img src="{{ url_for('static', filename='assets/photos/front_img.jpg') }}" alt="Adam Khan" />
+      <img src="static/assets/photos/front_img.jpg" alt="Adam Khan" />
     </div>
 
   </div>

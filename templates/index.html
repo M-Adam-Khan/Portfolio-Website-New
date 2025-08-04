@@ -13,24 +13,24 @@
   <!-- OG Meta -->
   <meta property="og:title" content="Muhammad Adam Khan | AI Portfolio" />
   <meta property="og:description" content="Coding my way through AI, drones, and real-world intelligent systems." />
-  <meta property="og:image" content="/static/img/preview.png" />
+  <meta property="og:image" content="static/img/preview.png" />
   <meta property="og:type" content="website" />
 
   <!-- Favicon -->
-  <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="static/img/favicon.ico" type="image/x-icon" />
 
   <!-- Font & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link rel="stylesheet" href="static/css/styles.css" />
 </head>
 <body>
 
   <!-- Global Background Video -->
   <video autoplay muted loop playsinline id="background-video">
-    <source src="{{ url_for('static', filename='assets/videos/intro_bg_video.mp4') }}" type="video/mp4">
+    <source src="static/assets/videos/intro_bg_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -38,17 +38,27 @@
   <div class="overlay"></div>
 
   <!-- Sections -->
-  {% include "_hero.html" %}
-  {% include "_about.html" %}
-  {% include "_stack.html" %}
-  {% include "_projects.html" %}
-  {% include "_contact.html" %}
+  
+  <!-- ✅ Hero Section -->
+  [Paste the cleaned hero section HTML here]
+
+  <!-- ✅ About Section -->
+  [Paste the cleaned about section HTML here]
+
+  <!-- ✅ Tech Stack Section -->
+  [Paste the cleaned stack section HTML here]
+
+  <!-- ✅ Projects Section -->
+  [Paste the cleaned projects section HTML here]
+
+  <!-- ✅ Contact Section -->
+  [Paste the cleaned contact section HTML here]
 
   <footer>
     <p>© 2025 Adam Khan</p>
   </footer>
 
   <!-- JS -->
-  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+  <script src="static/js/script.js" defer></script>
 </body>
 </html>
