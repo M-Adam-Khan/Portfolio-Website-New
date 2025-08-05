@@ -25,19 +25,18 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/static/css/styles.css" />
+  
 </head>
 <body>
 
-  <!-- Global Background Video -->
+  <!-- Background Video -->
   <video autoplay muted loop playsinline id="background-video">
     <source src="/static/assets/videos/intro_bg_video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  <!-- Optional Dark Overlay -->
   <div class="overlay"></div>
 
-  <!-- HERO SECTION -->
   <section id="hero">
     <nav class="hero-nav">
       <ul>
@@ -48,7 +47,7 @@
     </nav>
 
     <div class="hero-main-content">
-      <div class="hero-text">
+      <div class="hero-text fade-in-left">
         <h1>Hi there, I’m <span class="highlight-name">Adam Khan</span></h1>
         <h2>
           <span id="static-text">I'm </span>
@@ -60,14 +59,15 @@
         </p>
         <a href="/static/files/Resume M.Adam.pdf" download class="btn-download-resume">Download Resume</a>
       </div>
-      <div class="hero-image-wrapper">
+
+      <div class="hero-image-wrapper fade-in-right">
         <img src="/static/assets/photos/front_img.jpg" alt="Adam Khan" />
       </div>
     </div>
   </section>
 
   <!-- ABOUT SECTION -->
-  <section id="about">
+  <section id="about" class="reveal-section">
     <h2>About Me</h2>
     <p>Hi there! 👋 I'm <strong>Muhammad Adam Khan</strong>, an <strong>AI/ML Engineer</strong> and <strong>Python Developer</strong>.</p>
     <p>I hold a degree in <strong>Artificial Intelligence</strong> and have worked on a variety of impactful projects.</p>
@@ -82,13 +82,10 @@
     </ul>
   </section>
 
-  <!-- TECH STACK SECTION -->
-  <section id="stack">
+  <!-- TECH STACK -->
+  <section id="stack" class="reveal-section">
     <h2>Tech Stack</h2>
-    <p class="section-subtitle">
-      Technologies I've worked with across AI/ML, backend, data, and web development.
-    </p>
-
+    <p class="section-subtitle">Technologies I've worked with across AI/ML, backend, data, and web development.</p>
     <div class="tech-grid">
       <div class="tech-item"><div class="tech-circle"><img src="/static/assets/icons/Python.png" alt="Python" /></div><span>Python</span></div>
       <div class="tech-item"><div class="tech-circle"><img src="/static/assets/icons/scikit-learn.png" alt="Scikit-learn" /></div><span>Scikit-learn</span></div>
@@ -111,76 +108,51 @@
     </div>
   </section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects">
+  <!-- PROJECTS -->
+  <section id="projects" class="reveal-section">
     <h2>Featured Projects</h2>
-
     <div class="project-grid">
       <article class="project-card">
         <img src="/static/assets/photos/drone_img.jpg" alt="Adam Khan" />
         <h3>Eagle Wings (FYP)</h3>
-        <p>
-          An advanced drone automation system featuring face detection, object tracking, autonomous self-charging, navigation, and chatbot control using text and voice commands.
-        </p>
-        <a href="https://github.com/EagleWingsFYP" target="_blank" rel="noopener noreferrer" class="btn-github">View on GitHub</a>
+        <p>An advanced drone automation system with face detection, navigation, self-charging, and chatbot voice/text control.</p>
+        <a href="https://github.com/EagleWingsFYP" target="_blank" class="btn-github">View on GitHub</a>
       </article>
 
       <article class="project-card">
         <img src="/static/assets/photos/newsletter_img.jpg" alt="Newsletter AI Agent" />
         <h3>Newsletter AI Agent</h3>
-        <p>
-          An intelligent, end-to-end automated newsletter generator using cutting-edge LLMs (LLaMA 3 via Groq), LangGraph workflows, FastAPI backend, and a modern frontend for seamless newsletter creation.
-        </p>
-        <a href="https://github.com/M-Adam-Khan/Newsletter-AI-Agent" target="_blank" rel="noopener noreferrer" class="btn-github">View on GitHub</a>
+        <p>Fully automated newsletter generator using LLaMA 3 via Groq, LangGraph, FastAPI, and a modern frontend.</p>
+        <a href="https://github.com/M-Adam-Khan/Newsletter-AI-Agent" target="_blank" class="btn-github">View on GitHub</a>
       </article>
 
       <article class="project-card">
         <img src="/static/assets/photos/chatbot_img.jpg" alt="Custom AI Chatbot" />
         <h3>Custom AI Chatbot</h3>
-        <p>
-          A fully customizable chatbot application built with Streamlit and FastAPI, integrating Groq and OpenAI models for a powerful, scalable conversational AI experience.
-        </p>
-        <a href="https://github.com/M-Adam-Khan/Custom-AI-Chatbot" target="_blank" rel="noopener noreferrer" class="btn-github">View on GitHub</a>
+        <p>Custom chatbot using Streamlit and FastAPI, with OpenAI and Groq for a scalable, flexible AI assistant.</p>
+        <a href="https://github.com/M-Adam-Khan/Custom-AI-Chatbot" target="_blank" class="btn-github">View on GitHub</a>
       </article>
 
       <article class="project-card">
         <img src="/static/assets/photos/bloodline_img.jpg" alt="BloodLine Solutions" />
         <h3>BloodLine-Solutions</h3>
-        <p>
-          A smart ML-driven system to validate blood donors and patients, featuring donor registration, city & blood group matching, and Neo4j-powered data storage for accurate matching.
-        </p>
-        <a href="https://github.com/M-Adam-Khan/BloodLine-Solutions" target="_blank" rel="noopener noreferrer" class="btn-github">View on GitHub</a>
+        <p>ML-powered system to match patients with donors using Neo4j, with smart filtering based on city and group.</p>
+        <a href="https://github.com/M-Adam-Khan/BloodLine-Solutions" target="_blank" class="btn-github">View on GitHub</a>
       </article>
     </div>
-
-    <p class="see-more">
-      See more projects on
-      <a href="https://github.com/M-Adam-Khan" target="_blank" rel="noopener noreferrer">GitHub</a>.
-    </p>
+    <p class="see-more">See more projects on <a href="https://github.com/M-Adam-Khan" target="_blank">GitHub</a>.</p>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact">
+  <!-- CONTACT -->
+  <section id="contact" class="reveal-section">
     <h2>Contact Me</h2>
-
     <div class="contact-container">
-      <!-- Social Links -->
       <div class="contact-icons">
-        <a href="https://github.com/M-Adam-Khan" target="_blank">
-          <i class="fab fa-github"></i><span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/muhammad-adam-khan-7ba71421a/" target="_blank">
-          <i class="fab fa-linkedin"></i><span>LinkedIn</span>
-        </a>
-        <a href="mailto:muhammadadamkhan29@gmail.com">
-          <i class="fas fa-envelope"></i><span>Email</span>
-        </a>
-        <a href="https://wa.me/923044556632" target="_blank">
-          <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
-        </a>
+        <a href="https://github.com/M-Adam-Khan" target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a>
+        <a href="https://www.linkedin.com/in/muhammad-adam-khan-7ba71421a/" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+        <a href="mailto:muhammadadamkhan29@gmail.com"><i class="fas fa-envelope"></i><span>Email</span></a>
+        <a href="https://wa.me/923044556632" target="_blank"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
       </div>
-
-      <!-- Contact Form -->
       <form action="https://formspree.io/f/mgvzzrkj" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Name..." required />
         <input type="email" name="email" placeholder="Email..." required />
@@ -190,12 +162,10 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Adam Khan</p>
   </footer>
 
-  <!-- JS -->
   <script src="/static/js/script.js" defer></script>
 </body>
 </html>
